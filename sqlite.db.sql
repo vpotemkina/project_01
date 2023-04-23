@@ -1,0 +1,68 @@
+--SELECT ename, job, sal FROM emp
+--WHERE job = 'SALESMAN';
+--ALTER TABLE testfordrop RENAME TO targettable;
+--ALTER TABLE targettable RENAME COLUMN blablabla to targetcolumn;
+--ALTER TABLE targettable DROP COLUMN targetcolumn;
+--drop TABLE targettable;
+--CREATE TABLE persons (
+--      Name TEXT NOT NULL,
+--      Surname TEXT NOT NULL
+--  );
+--INSERT INTO persons (Name, Surname)
+--VALUES
+--('Петр', 'Петров'),
+--('Александр', 'Александров'),
+--('Сергей',  'Сергеев');
+--SELECT * from persons;
+--CREATE TABLE cars (
+--      Name TEXT NOT NULL,
+--      Car TEXT NOT NULL
+--  );
+--INSERT INTO cars (Name, Car)
+--VALUES
+--	('Петр', 'Мерседес'),
+--    ('Сергей', 'Тойота'),
+--    ('Сергей', 'Рено'),
+--    ('Иван', 'Рено');
+--SELECT * from cars;
+--SELECT persons.surname, cars.Car
+--FROM persons
+--JOIN cars ON persons.Name = cars.Name;
+--SELECT persons.surname, cars.Car
+--FROM persons
+--LEFT JOIN cars ON persons.Name = cars.Name;
+--SELECT persons.surname, cars.Car
+--FROM persons
+--RIGHT JOIN cars ON persons.Name = cars.Name;
+--SELECT persons.surname, cars.Car
+--FROM persons
+--FULL JOIN cars ON persons.Name = cars.Name;
+--SELECT persons.surname, cars.Car
+--FROM persons
+--CROSS JOIN cars;
+--SELECT * FROM emp;
+--SELECT ENAME, JOB, HIREDATE, SAL FROM emp
+--WHERE JOB = 'MANAGER'
+--ORDER BY SAL ASC;
+--SELECT * from emp
+--where COMM IS NULL
+--ORDER BY deptno DESC;
+--SELECT * FROM emp
+--WHERE sal BETWEEN 1500 AND 2500;
+--SELECT MAX(sal), ename, job, deptno FROM emp
+--GROUP BY deptno;
+--INSERT INTO emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+--VALUES
+--(6424, 'ILON', 'ENGINEER', 1789, '1985-03-23', 1500, 500, 10);
+--DELETE FROM emp
+--WHERE ename = 'SMITH';
+--UPDATE emp
+--SET comm = 100
+--WHERE COMM IS NULL;
+--UPDATE emp
+--SET comm = comm + 100;
+--UPDATE emp
+--set job = 'STAFF'
+--where job = 'CLERK';
+
+--SELECT * FROM emp;
